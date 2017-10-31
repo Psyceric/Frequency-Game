@@ -10,9 +10,9 @@ namespace ConsoleApplication8
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.DarkGray;
             Program Func = new Program();
             Func.startMenu();
-            Console.ReadLine();
 
         }
         public void startMenu()
@@ -26,6 +26,7 @@ namespace ConsoleApplication8
             centText("-------------------------");
             centText("Press Enter to Start Game");
             Console.ReadLine();
+            Console.Clear();
         }
         static void centText(string arg)
         {
@@ -33,6 +34,7 @@ namespace ConsoleApplication8
             int xOffset = Console.WindowWidth / 2 + arg.Length / 2;
             Console.WriteLine(arg.PadLeft(xOffset));
         }
+
 
     }
 }
