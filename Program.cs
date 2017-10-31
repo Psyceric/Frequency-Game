@@ -10,6 +10,8 @@ namespace ConsoleApplication8
     {
         static void Main(string[] args)
         {
+          console.writeLine("Test");
+          console.readline();
         }
     }
 }
