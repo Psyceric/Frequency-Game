@@ -34,11 +34,8 @@ namespace Location_Unknown
         public static bool pathTwo = false;
         public static bool pathThree = false;
         public static string tempString = "";
-
-
         public static void Main(string[] args)
         {
-
             Random rnd = new Random();
             Program Func = new Program();
             Func.Start();
@@ -53,8 +50,6 @@ namespace Location_Unknown
             {
                 Func.encounter(1, 1, 1, 1, 1, "Big Boi LLoyd");
             }
-            //Func.Cont();
-
         }
         public void Start()
         {
@@ -89,7 +84,6 @@ namespace Location_Unknown
                 }
                 else if ((confirm) == true)
                 {
-
                     if (decimal.Parse(userDef) > points)
                     {
                         Func.errOverNum();
@@ -126,7 +120,6 @@ namespace Location_Unknown
                         Func.pointAdd("Defense");
                         pointsTF = false;
                     }
-
                     else if (userDef.ToUpper() == "HELP")
                     {
                         Func.helpMenu("Defense");
@@ -135,7 +128,6 @@ namespace Location_Unknown
                     }
                     else if ((confirm) == true)
                     {
-
                         if (decimal.Parse(userDef) > points)
                         {
                             Func.errOverNum();
@@ -160,10 +152,7 @@ namespace Location_Unknown
                         pointsTF = false;
                     }
                 }
-
-
             }
-
         }
         public void acurStat()
         {
@@ -258,7 +247,6 @@ namespace Location_Unknown
                     }
                 }
             }
-
         }
         public void strenStat()
         {
